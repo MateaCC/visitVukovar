@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>O Vukovaru</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet"/>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light border-bottom">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="slike/logo.png" alt="Visit Vukovar" height="40">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+					<li class="nav-item"><a class="nav-link active" href="o_vukovaru.html">O Vukovaru</a></li>
+					<li class="nav-item"><a class="nav-link" href="sto_posjetiti.html">Što posjetiti</a></li>
+					<li class="nav-item"><a class="nav-link" href="dogadjanja.html">Događanja</a></li>
+					<li class="nav-item"><a class="nav-link" href="gastro.html">Gastro</a></li>
+					<li class="nav-item"><a class="nav-link" href="smjestaj.html">Smještaj</a></li>
+					<li class="nav-item"><a class="nav-link" href="galerija.html">Galerija</a></li>
+					<li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+				</ul>
+				<button class="btn btn-outline-primary">HR</button>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container py-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Povijest Vukovara</h2>
+        <hr>
+        <p> Područje Vukovara od davnina je bilo važno prometno i kulturno raskrižje, ali i poprište ratova. KOntinuirana naseljenost kroz pet tisuća godina potvrđena je brojnim arheološkim nalazištima,
+        a posebno se ističe Vučedolska kultura s lokaliteta Vučedol. Vučedolska golubica pronađena 1938. godine, postala je simbol grada, a vučedolski Orion smatra se najstarijim indoeuropskim kalendarom.</p>
+        <p>Na ovom području nalaze se nalazišta iz brončanog i željeznog doba, koja svjedoče o prisutnoti Ilira i Kelta. Rimljani su u 1. stoljeću prije Krista prodrli do Donava, izgradili obrambeni sustav 
+          (Dunavski limes) i unaprijedili gospodarstvo. Nakon propasti Rimskog carstva, uslijedile su seobe naroda i dolazak Hrvata u 6. stoljeću. Prostor između Save i Dunava postaje važno geopolitičko
+        područje.</p>
+        
+        <div class="text-center my-4">
+          <img src="slike/golubica.jbg" class="img-fluid" alt="Vučedolska golubica" style="max-width: 300px;">
+        </div>
+        <p>Vukovar se u pisanim izvorima spominje od 13. stoljeća, a 1231. godine stječe status slobodnog kraljevskog grada. Tijekom srednjeg vijeka postaje upravno središte velike Vukovske županije.
+        U razdoblju nakon turske vlasti grad postaje sjedište Srijemske županije, a značajnu ulogu imaju grofovi Eltz te brojni doseljenici - Nijemci, Mađari, Židovi, Rusini i drugi - čime grad postaje
+        višenacionalan.</p>
+        <p>U 20. stoljeću Vukovar se industrijski razvija, osobito kroz tvornicu Borovo i druge gospodarske grane. No, 1991. postaje simbolom stradanja. Grad je napadnut i razoren tijekom tromjesečne
+        opsade, a tisuće ljudi ubijene su, protjerane ili odvedene u logore.</p>
+        <p>Nakon rata, započeo je proces mirne reintegracije, a od 1997. godine Vukovar postupno obnavlja svoj identitet, vraćajući prepoznatljive vizure i mjesto u hrvatskom kulturnom i povijesnom
+        prostoru.</p>
+
+        <div class="text-center my-4">
+          <img src="slike/rat.jpg" class="img-fluid" alt="Ratna razaranja u Vukovaru">
+        </div>
+      </div>
+    
+
+      <div class="col-md-4">
+        <h5>Kalendar događanja</h5>
+        <hr>
+        <div id="kalendar"></div>
+      </div>
+    </div> 
+  </div>
+
+	<footer class="bg-light border-top pt-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h6>Newsletter</h6>
+					<form>
+						<div class="mb-2">
+							<input type="email" class="form-control" placeholder="Email">
+						</div>
+						<div class="form-check mb-2">
+							<input type="checkbox" class="form-check-input" id="privatnost">
+							<label class="form-check-label" for="privatnost">Prihvaćam pravila o privatnosti</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Prijavi se</button>
+					</form>
+				</div>
+				<div class="col-md-4">
+					<h6>Adresa</h6>
+					<p>TZ grada Vukovara<br>
+            J.J. Strossmayera 15<br>
+            32000 Vukovar</p>
+				</div>
+				<div class="col-md-4">
+					<h6>Radno vrijeme</h6>
+					<p>Ponedjeljak - Petak<br>
+					od 08:00 do 16:00<br>Subota<br>
+					od 08:00 do 13:00</p>
+				</div>
+			</div>
+			<div class="text-center py-3">
+				<small>&copy; 2025 Turistička zajednica grada Vukovara</small>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('kalendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        locale: 'hr',
+        events: [
+          {
+            title: 'VUKOVAR FILM FEST'
+              start: '2025-08-27',
+            end: '2025-08-31'
+          },
+          {
+            title: 'VUKOVARSKI ETNO SAJAM',
+            start: '2025-09-26',
+            end: '2025-09-28'
+          },
+          {
+            title: 'ADVENT U VUKOVARU',
+            start: '2025-11-30'
+          }
+        ]
+      });
+  </script>
+</body>
+</html>
