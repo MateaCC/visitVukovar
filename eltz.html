@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dvorac Eltz</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet"/>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light border-bottom">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="slike/logo.png" alt="Visit Vukovar" height="40">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+					<li class="nav-item"><a class="nav-link" href="o_vukovaru.html">O Vukovaru</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false">Što posjetiti</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item active" href="eltz.html">Dvorac Eltz</a></li>
+							<li><a class="dropdown-item" href="street_art.html">Street Art galerija na otvorenom</a></li>
+							<li><a class="dropdown-item" href="nokturno.html">Memorijalni turizam</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="dogadjanja.html">Događanja</a></li>
+					<li class="nav-item"><a class="nav-link" href="gastro.html">Gastro</a></li>
+					<li class="nav-item"><a class="nav-link" href="smjestaj.html">Smještaj</a></li>
+					<li class="nav-item"><a class="nav-link" href="galerija.html">Galerija</a></li>
+					<li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+				</ul>
+				<button class="btn btn-outline-primary">HR</button>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container py-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Dvorac Eltz - barokna ljepotica na obali Dunava</h2>
+        <hr>
+        <p> Smješten uz samu obalu Dunava, dvorac Eltz predstavlja jedno od najsjajnijih ostvarenja barokno-klasicističke arhitekture kontinentalne Hrvatske. Ovaj reprezentativni kompleks sagrađen je 
+        sredinom 18. stoljeća kao rezidencija moćne njemačke plemićke obitelji Eltz, koja je u Vukovar došla 1736. godine. Njihova prisutnost ostavila je dubok trag u društvenom, kulturnom i 
+        gospodarskom životu grada.</p>
+        <p>Dvorac se ističe skladnim arhitektonskim rješenjima, bogato ukrašenim pročeljima i prostranim unutarnjim dvorištem, a tijekom svoje povijesti nekoliko je puta nadograđivan. Na prijelazu iz 
+        19. u 20. stoljeće oblikovan je u današnjem obliku zahvaljujući bečkom arhitektu Viktoru Siedeku.</p>
+        <p>Tijekom Domovinskog rata dvorac je pretrpio teška razaranja – gotovo je potpuno uništen 1991. godine. No, zahvaljujući pažljivoj restauraciji koja je trajala do 2011. godine, danas ponovno 
+        krasi vukovarski pejzaž u svom punom sjaju.</p>
+        <p>U njegovim obnovljenim prostorima danas djeluje Gradski muzej Vukovar, jedan od najmodernijih muzeja u Hrvatskoj. Stalni postav muzeja prostire se na više od 3500 m² te vodi posjetitelje 
+        kroz čak 8000 godina života na ovim prostorima – od prapovijesti do suvremenog doba. Postav uključuje arheološku, kulturno-povijesnu, umjetničku i etnografsku građu, a obogaćen je suvremenim 
+        multimedijalnim rješenjima poput touch-screena i interaktivnih prikaza.</p>
+        <p>Osim što predstavlja nezaobilaznu točku za sve ljubitelje povijesti i kulture, dvorac Eltz je i mjesto susreta – domaćin je raznih izložbi, edukacija, koncertnih večeri i kulturnih 
+        manifestacija koje dodatno oživljavaju njegov povijesni ambijent.</p>
+
+          
+
+      <div class="col-md-4">
+        <h5>Kalendar događanja</h5>
+        <hr>
+        <div id="kalendar"></div>
+      </div>
+    </div> 
+  </div>
+
+	<footer class="bg-light border-top pt-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h6>Newsletter</h6>
+					<form>
+						<div class="mb-2">
+							<input type="email" class="form-control" placeholder="Email">
+						</div>
+						<div class="form-check mb-2">
+							<input type="checkbox" class="form-check-input" id="privatnost">
+							<label class="form-check-label" for="privatnost">Prihvaćam pravila o privatnosti</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Prijavi se</button>
+					</form>
+				</div>
+				<div class="col-md-4">
+					<h6>Adresa</h6>
+					<p>TZ grada Vukovara<br>
+            J.J. Strossmayera 15<br>
+            32000 Vukovar</p>
+				</div>
+				<div class="col-md-4">
+					<h6>Radno vrijeme</h6>
+					<p>Ponedjeljak - Petak<br>
+					od 08:00 do 16:00<br>Subota<br>
+					od 08:00 do 13:00</p>
+				</div>
+			</div>
+			<div class="text-center py-3">
+				<small>&copy; 2025 Turistička zajednica grada Vukovara</small>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('kalendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        locale: 'hr',
+        events: [
+          {
+            title: 'VUKOVAR FILM FEST',
+              start: '2025-08-27',
+            end: '2025-08-31'
+          },
+          {
+            title: 'VUKOVARSKI ETNO SAJAM',
+            start: '2025-09-26',
+            end: '2025-09-28'
+          },
+          {
+            title: 'ADVENT U VUKOVARU',
+            start: '2025-11-30'
+          }
+        ]
+      });
+    	calendar.render();
+  });
+</script>
+</body>
+</html>
